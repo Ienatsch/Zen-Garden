@@ -1,0 +1,69 @@
+$grid-columns: 100% / 8;
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: $grid-columns;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::before {
+    background-image: url('rockPoint.png');
+    background-size: 35px 30px;
+    display: inline-block;
+    width: 35px; 
+    height: 30px;
+    content:"";
+}
+
+.intro {
+    grid-column: 1/6;
+    padding-left: 2em;
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: .8em;
+        margin-top: -25px;
+        padding-left: 4.6em;
+    }
+
+    .summary > p:nth-child(2) {
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: -10px 0 0 35%;
+        padding: 20px;
+    }
+}
+
+.main {
+    grid-column: 1/8;
+}
+
+.sidebar {
+    grid-column: 7/8;
+    grid-row: 1;
+   
+}
+
+footer {
+    grid-column: 1/8;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
