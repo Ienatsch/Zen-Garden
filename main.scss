@@ -1,4 +1,6 @@
 $grid-columns: 100% / 8;
+$mid-bp: 650px;
+$large-bp: 1200px;
 
 body {
     box-sizing: border-box;
@@ -9,6 +11,10 @@ body {
 .page-wrapper {
     display: grid;
     grid-template-columns: $grid-columns;
+
+    @media only screen and (min-width: $large-bp) {
+        font-size: 1.2em;
+    }
 }
 
 h3 {
@@ -22,6 +28,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     width: 35px; 
     height: 30px;
     content:"";
+    margin-left: -35px;
 }
 
 .intro {
@@ -30,35 +37,113 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
     h1 {
         font-size: 1.6em;
+        text-align: center;
+
+        @media only screen and (min-width: $mid-bp) {
+            font-size: 3em;
+        }
+
+        @media only screen and (min-width: $large-bp) {
+            font-size: 5em;
+            margin-top: 10px;
+        }
     }
 
     h2 {
         font-size: .8em;
         margin-top: -25px;
-        padding-left: 4.6em;
+        padding-left: 3.5em;
+        text-align: center;
+
+        @media only screen and (min-width: $mid-bp) {
+            font-size: 1.1em;
+            margin-top: -40px;
+            padding-left: 150px;
+        }
+
+        @media only screen and (min-width: $large-bp) {
+            font-size: 2em;
+            margin-top: -80px;
+            padding-left: 500px;
+        }
+    }
+
+    .summary > p{
+        @media only screen and (min-width: $mid-bp) {
+            display: block;
+            font-size: 1.2em;
+            width: 60%;
+            margin: auto;
+        }
     }
 
     .summary > p:nth-child(2) {
         border: 1px solid black;
-        border-radius: 50%;
+        border-radius: 10px;
         margin: -10px 0 0 35%;
         padding: 20px;
+        max-width: 100px;
+
+        @media only screen and (min-width: $mid-bp) {
+            margin: 10px 0 0 45%;
+            display: inline-block;
+        }
+    }
+
+    .preamble {
+        margin: 70px 0 0 5%;
     }
 }
 
 .main {
     grid-column: 1/8;
+
+    @media only screen and (min-width: $large-bp) {
+        grid-column: 1/6;
+        margin-left: 5%;
+        padding-left: 2em;
+    }
 }
 
 .sidebar {
     grid-column: 7/8;
     grid-row: 1;
+    text-align: center;
+
+    h3 {
+        margin-left: 35px;
+    }
+    @media only screen and (min-width: $mid-bp) {
+        grid-column: 6/8;
+    }
    
+    .design-selection::before {
+        background-image: url('rockPoint.png');
+        background-size: 100px 100px;
+        display: block;
+        width: 100px; 
+        height: 100px;
+        content:"";
+        margin: 20px auto auto auto;
+
+        @media only screen and (min-width: $large-bp) {
+            background-image: none;
+            width: 0;
+            height: 0;
+            margin: 0;
+        }
+    }
 }
 
 footer {
     grid-column: 1/8;
     text-align: center;
+    border-top: 1px solid black;
+    padding: 20px;
+
+    @media only screen and (min-width: $large-bp) {
+
+    }
 }
 
 ul {
