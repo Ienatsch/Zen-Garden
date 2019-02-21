@@ -88,6 +88,10 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
             margin: 10px 0 0 45%;
             display: inline-block;
         }
+
+        @media only screen and (min-width: $large-bp) {
+            max-width: 120px;
+        }
     }
 
     .preamble {
