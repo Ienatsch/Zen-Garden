@@ -8,8 +8,9 @@ body {
 .page-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 12.5%;
-      grid-template-columns: 12.5%;
+  width: 100%;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -20,6 +21,18 @@ body {
 
 h3 {
   text-align: center;
+}
+
+@media only screen and (min-width: 650px) {
+  h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"]) {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"]) {
+    font-size: 1.8em;
+  }
 }
 
 h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::before {
@@ -37,6 +50,14 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   -ms-grid-column-span: 5;
   grid-column: 1/6;
   padding-left: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
 }
 
 .intro h1 {
@@ -106,7 +127,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
 @media only screen and (min-width: 1200px) {
   .intro .summary > p:nth-child(2) {
-    max-width: 120px;
+    max-width: 410px;
   }
 }
 
@@ -114,26 +135,34 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   margin: 70px 0 0 5%;
 }
 
+@media only screen and (min-width: 1200px) {
+  .intro .preamble {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3/6;
+    margin: 0;
+  }
+}
+
 .main {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
+  -ms-grid-column-span: 88;
+  grid-column: 1/89;
 }
 
 @media only screen and (min-width: 1200px) {
   .main {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1/6;
-    margin-left: 5%;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
     padding-left: 2em;
   }
 }
 
 .sidebar {
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
-  grid-column: 7/8;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-column: 6/9;
   -ms-grid-row: 1;
   grid-row: 1;
   text-align: center;
@@ -151,6 +180,13 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    position: fixed;
+    right: 0;
+  }
+}
+
 .sidebar .design-selection::before {
   background-image: url("rockPoint.png");
   background-size: 100px 100px;
@@ -158,7 +194,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   width: 100px;
   height: 100px;
   content: "";
-  margin: 20px auto auto auto;
+  margin: 20px auto auto 35%;
 }
 
 @media only screen and (min-width: 1200px) {
