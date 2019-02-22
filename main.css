@@ -15,7 +15,7 @@ h2, h3 {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (1fr)\[8\];
+  -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -107,7 +107,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
 @media only screen and (min-width: 1200px) {
   .intro .summary::before {
-    background-image: url("rockPoint.png");
+    background-image: url("https://via.placeholder.com/200");
     background-size: 200px 200px;
     display: inline-block;
     width: 200px;
@@ -189,7 +189,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
 @media only screen and (min-width: 1200px) {
   .main::before {
-    background-image: url("rockPoint.png");
+    background-image: url("https://via.placeholder.com/100");
     background-size: 100px 100px;
     display: block;
     width: 100px;

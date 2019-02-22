@@ -94,7 +94,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     
     .summary::before {
         @media only screen and (min-width: $large-bp) {
-            background-image: url("rockPoint.png");
+            background-image: url("https://via.placeholder.com/200");
             background-size: 200px 200px;
             display: inline-block;
             width: 200px; 
@@ -163,7 +163,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
 .main::before {
     @media only screen and (min-width: $large-bp) {
-        background-image: url("rockPoint.png");
+        background-image: url("https://via.placeholder.com/100");
         background-size: 100px 100px;
         display: block;
         width: 100px; 
