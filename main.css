@@ -183,6 +183,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     -ms-grid-column-span: 6;
     grid-column: 1/7;
     padding-left: 2em;
+    width: auto;
   }
 }
 

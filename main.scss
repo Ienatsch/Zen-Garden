@@ -150,13 +150,14 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     grid-column: 2/8;
     padding-right: 32px;
     width: 100%;
-    
+
     // Placeholder
     background-color: lightgrey;
 
     @media only screen and (min-width: $large-bp) {
         grid-column: 1/7;
         padding-left: 2em;
+        width: auto;
     }
 }
 
