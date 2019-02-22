@@ -227,13 +227,20 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 @media only screen and (min-width: 1200px) {
   .sidebar {
     position: fixed;
-    top: 175px;
+    top: 155px;
     right: 1.9vw;
-    height: 675px;
+    height: 500px;
     width: 23%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+  }
+  .sidebar a {
+    font-size: .8em;
+  }
+  .sidebar h3 {
+    font-size: 1.5em;
+    margin-bottom: -20px;
   }
 }
 
