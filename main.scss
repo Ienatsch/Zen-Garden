@@ -144,11 +144,13 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     grid-column: 6/9;
     grid-row: 1;
     text-align: center;
+    
     // Placeholder
     background-color: coral;
 
     h3 {
         margin-left: 35px;
+        font-size: 2em;
     }
 
     @media only screen and (min-width: $mid-bp) {
