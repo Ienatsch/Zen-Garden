@@ -146,7 +146,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     }
 }
 
-.main:not(footer) {
+.main {
     grid-column: 2/8;
     padding-right: 32px;
     width: 100%;
@@ -155,8 +155,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     background-color: lightgrey;
 
     @media only screen and (min-width: $large-bp) {
-        grid-column: 1/7;
-        padding-left: 2em;
+        grid-column: 1/7;      
         width: auto;
     }
 }
@@ -173,6 +172,10 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         top: 30px;
         right: 9vw;
     }
+}
+
+.main > div {
+    padding-left: 2em;
 }
 
 .sidebar {
@@ -252,12 +255,12 @@ footer {
     background-color: lightblue;
 
     @media only screen and (min-width: $large-bp) {
-        width: 102.7%;
-        margin-left: -2.5vw;
+        width: 99.3%;
+        margin: 0;
     }
 
     a {
-        margin-right: 40px;
+        margin: 0 20px 0 20px;
     }
 }
 

@@ -168,7 +168,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   }
 }
 
-.main:not(footer) {
+.main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
@@ -178,11 +178,10 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 }
 
 @media only screen and (min-width: 1200px) {
-  .main:not(footer) {
+  .main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-column: 1/7;
-    padding-left: 2em;
     width: auto;
   }
 }
@@ -199,6 +198,10 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     top: 30px;
     right: 9vw;
   }
+}
+
+.main > div {
+  padding-left: 2em;
 }
 
 .sidebar {
@@ -296,13 +299,13 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   footer {
-    width: 102.7%;
-    margin-left: -2.5vw;
+    width: 99.3%;
+    margin: 0;
   }
 }
 
 footer a {
-  margin-right: 40px;
+  margin: 0 20px 0 20px;
 }
 
 ul {
