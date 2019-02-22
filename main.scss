@@ -149,7 +149,8 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 .main:not(footer) {
     grid-column: 2/8;
     padding-right: 32px;
-
+    width: 100%;
+    
     // Placeholder
     background-color: lightgrey;
 

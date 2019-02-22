@@ -173,6 +173,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   -ms-grid-column-span: 6;
   grid-column: 2/8;
   padding-right: 32px;
+  width: 100%;
   background-color: lightgrey;
 }
 
