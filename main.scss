@@ -40,6 +40,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     height: 30px;
     content:"";
     margin-left: -35px;
+    margin-right: 2vw;
 }
 
 .intro {
@@ -119,8 +120,8 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     }
 }
 
-.main {
-    grid-column: 1/89;
+.main:not(footer) {
+    grid-column: 2/8;
 
     @media only screen and (min-width: $large-bp) {
         grid-column: 1/7;
@@ -136,13 +137,27 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     h3 {
         margin-left: 35px;
     }
+
     @media only screen and (min-width: $mid-bp) {
         grid-column: 6/8;
     }
 
     @media only screen and (min-width: $large-bp) {
         position: fixed;
-        right: 0;
+        top: 175px;
+        right: 1.9vw;
+        height: 675px;
+        width: 23%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
    
     .design-selection::before {
@@ -152,7 +167,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         width: 100px; 
         height: 100px;
         content:"";
-        margin: 20px auto auto 35%;
+        margin: 20px auto auto 10vw;
 
         @media only screen and (min-width: $large-bp) {
             background-image: none;
@@ -164,10 +179,24 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 }
 
 footer {
-    grid-column: 1/8;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    margin-left: -22%;
+    bottom: 0;
     text-align: center;
     border-top: 1px solid black;
     padding: 20px;
+
+    @media only screen and (min-width: $large-bp) {
+        width: 102.7%;
+        margin-left: -40px;
+    }
+
+    a {
+        margin-right: 40px;
+    }
 }
 
 ul {
