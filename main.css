@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,7 +16,7 @@ h2, h3 {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (1fr)[8];
+  -ms-grid-columns: (1fr)\[8\];
       grid-template-columns: repeat(8, 1fr);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -77,11 +78,12 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 .intro h1 {
   font-size: 1.6em;
   text-align: center;
+  font-family: 'Cinzel', serif;
 }
 
 @media only screen and (min-width: 650px) {
   .intro h1 {
-    font-size: 3em;
+    font-size: 2.7em;
   }
 }
 
@@ -241,7 +243,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   .sidebar {
     position: fixed;
     top: 155px;
-    right: 1.9vw;
+    right: 1.94vw;
     height: 500px;
     width: 23%;
     border-top: 1px solid black;

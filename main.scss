@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 $mid-bp: 650px;
 $large-bp: 1200px;
+$one_px_black_border: 1px solid black;
 
 body {
     box-sizing: border-box;
@@ -67,9 +69,10 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     h1 {
         font-size: 1.6em;
         text-align: center;
-
+        font-family: 'Cinzel', serif;
+        
         @media only screen and (min-width: $mid-bp) {
-            font-size: 3em;
+            font-size: 2.7em;
         }
 
         @media only screen and (min-width: $large-bp) {
@@ -125,7 +128,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     }
 
     .summary > p:nth-child(2) {
-        border: 1px solid black;
+        border: $one_px_black_border;
         border-radius: 10px;
         margin: -10px 0 0 35%;
         padding: 20px;
@@ -203,12 +206,12 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     @media only screen and (min-width: $large-bp) {
         position: fixed;
         top: 155px;
-        right: 1.9vw;
+        right: 1.94vw;
         height: 500px;
         width: 23%;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
+        border-top: $one_px_black_border;
+        border-bottom: $one_px_black_border;
+        border-right: $one_px_black_border;
 
         a {
             font-size: .8em;
@@ -253,7 +256,7 @@ footer {
     margin-left: -22%;
     bottom: 0;
     text-align: center;
-    border-top: 1px solid black;
+    border-top: $one_px_black_border;
     padding: 20px;
 
     // Placeholder
