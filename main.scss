@@ -237,7 +237,11 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         width: 100px; 
         height: 100px;
         content:"";
-        margin: 20px auto auto 15vw;
+        margin: 20px auto auto 10vw;
+
+        @media only screen and (min-width: $mid-bp) {
+            margin-left: 15vw;
+        }
 
         @media only screen and (min-width: $large-bp) {
             background-image: none;

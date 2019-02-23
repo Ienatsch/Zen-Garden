@@ -16,7 +16,7 @@ h2, h3 {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (1fr)\[8\];
+  -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -280,7 +280,13 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   width: 100px;
   height: 100px;
   content: "";
-  margin: 20px auto auto 15vw;
+  margin: 20px auto auto 10vw;
+}
+
+@media only screen and (min-width: 650px) {
+  .sidebar .design-selection::before {
+    margin-left: 15vw;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
