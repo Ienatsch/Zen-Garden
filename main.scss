@@ -121,15 +121,15 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
     .summary::before {
         @media only screen and (min-width: $large-bp) {
-            background-image: url("https://via.placeholder.com/200");
-            background-size: 200px 200px;
+            background-image: url(images/buddha.png);
+            background-size: 300px 300px;
             display: inline-block;
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             content:"";
             position: absolute;
-            top: 150px;
-            left: 10vw;
+            top: 110px;
+            left: 7vw;
         }
     }
 
@@ -248,11 +248,11 @@ a:active {
 
 .main::before {
     @media only screen and (min-width: $large-bp) {
-        background-image: url("https://via.placeholder.com/100");
-        background-size: 100px 100px;
+        background-image: url(images/croppedBonsai.png);
+        background-size: 140px 140px;
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
         content:"";
         position: absolute;
         top: 30px;
@@ -282,8 +282,8 @@ a:active {
     }
 
     @media only screen and (min-width: $large-bp) {
-        position: fixed;
-        top: 155px;
+        position: absolute;
+        top: 167px;
         right: 1.94vw;
         height: 500px;
         width: 23%;
@@ -309,7 +309,7 @@ a:active {
     }
 
     .design-selection::before {
-        background-image: url('rockPoint.png');
+        background-image: url(images/croppedBonsai.png);
         background-size: 100px 100px;
         display: block;
         width: 100px;
