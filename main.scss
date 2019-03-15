@@ -6,14 +6,32 @@ $mid-bp: 650px;
 $large-bp: 1200px;
 $one_px_black_border: 1px solid black;
 
+$coloruno: #2a2922;
+$colordos: #506d2f;
+$colortres: #7d5642;
+$colorcuatro: #f3ebdd;
+$colorcinco: #ffffff;
+
+
+
+
+
+
+
 body {
+    background: rgba(80, 109, 47, 0.6);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 h2, h3 {
+    color: $coloruno;
     font-family: 'Tangerine', cursive;
+}
+
+p {
+  color: $coloruno;
 }
 
 .page-wrapper {
@@ -48,29 +66,30 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
     background-image: url('rockPoint.png');
     background-size: 35px 30px;
     display: inline-block;
-    width: 35px; 
+    width: 35px;
     height: 30px;
     content:"";
     margin-left: -35px;
     margin-right: 2vw;
 }
-
+//-------------------------------------TEXT SETTING---------------------------
 .intro {
     grid-column: 1/6;
     padding: 0 1em 0 1em;
 
     // Placeholder
-    background-color: lightpink;
+    background-color: $colorcuatro;
+
 
     @media only screen and (min-width: $large-bp) {
         grid-column: 1/7;
     }
-    
+
     h1 {
         font-size: 1.6em;
         text-align: center;
         font-family: 'Cinzel', serif;
-        
+
         @media only screen and (min-width: $mid-bp) {
             font-size: 2.7em;
         }
@@ -99,13 +118,13 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
             padding-left: 14.5em;
         }
     }
-    
+
     .summary::before {
         @media only screen and (min-width: $large-bp) {
             background-image: url("https://via.placeholder.com/200");
             background-size: 200px 200px;
             display: inline-block;
-            width: 200px; 
+            width: 200px;
             height: 200px;
             content:"";
             position: absolute;
@@ -116,7 +135,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 
     .summary > p{
         @media only screen and (min-width: $mid-bp) {
-            display: block;          
+            display: block;
             width: 60%;
             margin: auto;
         }
@@ -153,17 +172,76 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         }
     }
 }
+//-------------------------------------LINKS------------------------------------
 
+a:link {
+  color: rgba(80, 109, 47, 0.45);
+  text-decoration: none;
+
+}
+
+
+.sidebar a:link {
+ color: $colorcuatro;
+ text-shadow: #FC0 1px 0 10px;
+
+
+}
+
+a:visited {
+  color: $colortres;
+}
+
+
+a:hover {
+  color: $coloruno;
+  font-size: larger;
+}
+
+.sidebar a:hover {
+  color: $colorcuatro;
+  font-size: medium;
+
+}
+
+
+
+a:active {
+  color: $colordos;
+  font-size: smaller;
+
+}
+.sidebar a:active {
+  color: $colorcuatro;
+  font-size: smaller;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------MAIN------------------------------------
 .main {
     grid-column: 2/8;
     padding-right: 32px;
     width: 100%;
 
     // Placeholder
-    background-color: lightgrey;
+    background-color:rgba(243, 235, 221, 0.8);
 
     @media only screen and (min-width: $large-bp) {
-        grid-column: 1/7;      
+        grid-column: 1/7;
         width: auto;
     }
 }
@@ -173,7 +251,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         background-image: url("https://via.placeholder.com/100");
         background-size: 100px 100px;
         display: block;
-        width: 100px; 
+        width: 100px;
         height: 100px;
         content:"";
         position: absolute;
@@ -185,14 +263,14 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 .main > div {
     padding-left: 2em;
 }
-
+//-------------------------------------SIDEBAR----------------------------------
 .sidebar {
     grid-column: 6/9;
     grid-row: 1;
     text-align: center;
-    
+
     // Placeholder
-    background-color: coral;
+    background-color: rgba(125, 86, 66, 0.8);
 
     h3 {
         margin-left: 35px;
@@ -229,12 +307,12 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         flex-direction: column;
         justify-content: center;
     }
-   
+
     .design-selection::before {
         background-image: url('rockPoint.png');
         background-size: 100px 100px;
         display: block;
-        width: 100px; 
+        width: 100px;
         height: 100px;
         content:"";
         margin: 20px auto auto 10vw;
@@ -251,7 +329,7 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
         }
     }
 }
-
+//-------------------------------------FOOTER----------------------------------
 footer {
     display: flex;
     justify-content: center;
@@ -264,7 +342,7 @@ footer {
     padding: 20px;
 
     // Placeholder
-    background-color: lightblue;
+    background-color: $coloruno;
 
     @media only screen and (min-width: $large-bp) {
         width: 99.3%;
