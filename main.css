@@ -85,6 +85,8 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   font-size: 1.6em;
   text-align: center;
   font-family: 'Cinzel', serif;
+  -webkit-animation: slidein 3s;
+          animation: slidein 3s;
 }
 
 @media only screen and (min-width: 650px) {
@@ -105,6 +107,11 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
   margin-top: -20px;
   padding-left: 7em;
   text-align: center;
+  -webkit-animation: fadein 6s forwards;
+          animation: fadein 6s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @media only screen and (min-width: 650px) {
@@ -153,11 +160,11 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 }
 
 .intro .summary > p:nth-child(2) {
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: -10px 0 0 35%;
+  border: 2px solid #7d5642;
+  border-radius: 15px 50px;
   padding: 20px;
-  max-width: 100px;
+  width: auto;
+  height: auto;
 }
 
 @media only screen and (min-width: 650px) {
@@ -368,5 +375,41 @@ footer a {
 
 ul {
   list-style-type: none;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
