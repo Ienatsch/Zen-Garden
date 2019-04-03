@@ -190,7 +190,6 @@ h3:not([class*="select"]):not([class*="archives"]):not([class*="resources"])::be
 a:link {
   color: $colortres;
   text-decoration: none;
-  text-shadow: $colordos 1px 0 10px;
 
 }
 
@@ -201,7 +200,7 @@ a:visited {
 
 a:hover {
   color: $colordos;
-  text-shadow: $colordos 5px 10px 10px;
+  text-shadow: $colordos 1px 2px 3px;
   z-index: 2;
 }
 
